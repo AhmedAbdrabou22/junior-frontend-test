@@ -1,0 +1,71 @@
+.task-form__row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.task-form__input {
+  flex: 1 1 200px;
+  padding: 10px 12px;
+  border: 1px solid #d9dee3;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background: #fff;
+  color: #1f2933;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.task-form__input:focus {
+  border-color: #3e6ae1;
+}
+
+.task-form__input::placeholder {
+  color: #9aa5b1;
+}
+
+.task-form__select {
+  padding: 10px 12px;
+  border: 1px solid #d9dee3;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  background: #fff;
+  color: #1f2933;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.task-form__select:focus {
+  border-color: #3e6ae1;
+}
+
+.task-form__button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #3e6ae1;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.task-form__button:hover {
+  background: #3357c0;
+}
+
+.task-form__error {
+  color: #d0393e;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 8px 0 0;
+}

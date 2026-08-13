@@ -1,0 +1,43 @@
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.filter-bar__btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #d9dee3;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #52606d;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.filter-bar__btn:hover {
+  border-color: #3e6ae1;
+  color: #3e6ae1;
+}
+
+.filter-bar__btn--active {
+  background: #3e6ae1;
+  border-color: #3e6ae1;
+  color: #fff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

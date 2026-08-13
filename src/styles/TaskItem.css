@@ -1,0 +1,133 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  transition: all 0.3s ease;
+}
+
+.task-item--done .task-item__title {
+  text-decoration: line-through;
+  color: #9aa5b1;
+}
+
+.task-item__checkbox-wrap input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.task-item__title {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  word-break: break-word;
+  color: #1f2933;
+  letter-spacing: 0.3px;
+}
+
+.task-item__badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.task-item__badge--high {
+  background: #ffe3e3;
+  color: #c92a2a;
+}
+
+.task-item__badge--medium {
+  background: #fff3bf;
+  color: #a17800;
+}
+
+.task-item__badge--low {
+  background: #d3f9d8;
+  color: #2b8a3e;
+}
+
+.task-item__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-item__btn {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 6px;
+  border: 1px solid #d9dee3;
+  background: #fff;
+  cursor: pointer;
+  color: #52606d;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.task-item__btn:hover {
+  border-color: #3e6ae1;
+  color: #3e6ae1;
+}
+
+.task-item__btn--danger:hover {
+  border-color: #d0393e;
+  color: #d0393e;
+}
+
+.task-item__btn--save {
+  background: #3e6ae1;
+  border-color: #3e6ae1;
+  color: #fff;
+}
+
+.task-item__btn--save:hover {
+  color: #fff;
+}
+
+.task-item__edit-form {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.task-item__edit-input {
+  flex: 1 1 160px;
+  padding: 8px 10px;
+  border: 1px solid #d9dee3;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background: #fff;
+  color: #1f2933;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.task-item__edit-input:focus {
+  border-color: #3e6ae1;
+}
+
+.task-item__edit-select {
+  padding: 8px 10px;
+  border: 1px solid #d9dee3;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  background: #fff;
+  color: #1f2933;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.task-item__edit-select:focus {
+  border-color: #3e6ae1;
+}
